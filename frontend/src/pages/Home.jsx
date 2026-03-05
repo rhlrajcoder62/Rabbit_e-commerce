@@ -3,6 +3,77 @@ import Hero from '../components/Layout/Hero'
 import GenderColleectionSection from '../components/Products/GenderColleectionSection'
 import NewArrivals from '../components/Products/NewArrivals'
 import ProductDetails from '../components/Products/ProductDetails'
+import ProductGrid from '../components/Products/ProductGrid'
+
+
+const placeholderProducts =  [
+  {
+    _id: 1,
+    name: "Casual Shirt",
+    price: 29.99,
+    images: [{
+      url: "https://picsum.photos/500/500?random=1",
+    }]
+  },
+  {
+    _id: 2,
+    name: "Casual Shirt",
+    price: 29.99,
+    images: [{
+      url: "https://picsum.photos/500/500?random=2",
+    }]
+  },
+  {
+    _id: 3,
+    name: "Casual Shirt",
+    price: 29.99,
+    images: [{
+      url: "https://picsum.photos/500/500?random=3",
+    }]
+  },
+  {
+    _id: 4,
+    name: "Casual Shirt",
+    price: 29.99,
+    images: [{
+      url: "https://picsum.photos/500/500?random=4",
+    }]
+  },
+   
+  {
+    _id: 5,
+    name: "Casual Shirt",
+    price: 29.99,
+    images: [{
+      url: "https://picsum.photos/500/500?random=5",
+    }]
+  },
+  {
+    _id: 6,
+    name: "Casual Shirt",
+    price: 29.99,
+    images: [{
+      url: "https://picsum.photos/500/500?random=6",
+    }]
+  },
+  {
+    _id: 7,
+    name: "Casual Shirt",
+    price: 29.99,
+    images: [{
+      url: "https://picsum.photos/500/500?random=7",
+    }]
+  },
+  {
+    _id: 8,
+    name: "Casual Shirt",
+    price: 29.99,
+    images: [{
+      url: "https://picsum.photos/500/500?random=8",
+    }]
+  },
+]
+
 
 const Home = () => {
   return (
@@ -14,6 +85,11 @@ const Home = () => {
       {/* Best Seller */}
       <h2 className="text-3xl font-bold text-center mb-4">Best Sellers</h2>
       <ProductDetails/>
+          {/* Top wears for women */}
+      <div className="container mx-auto">
+        <h2 className="text-3xl text-center font-bold mb-4">Top Wears for Women</h2>
+      </div>
+      <ProductGrid products={placeholderProducts}/>
     </div>
   )
 }
